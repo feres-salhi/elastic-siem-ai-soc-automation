@@ -58,8 +58,8 @@ flowchart TD
 ### 1. Cloud server
 Launched Windows Server 2025 in Frankfurt with a key pair (the only way to decrypt the Administrator password) and a security group allowing RDP from my IP only.
 
-![Instance running](screenshots/04-ec2-instance-running.png)
-![RDP only from my IP](screenshots/05-security-group-rdp-myip.png)
+![Instance running](screenshots/05-ec2-instance-running.png)
+![RDP only from my IP](screenshots/04-security-group-rdp-myip.png)
 
 ### 2. Elastic SIEM + EDR agent
 Created an Elastic Security serverless project, added the **Elastic Defend** integration (Complete EDR) with the System integration in the policy `windows-victim-policy`, and installed the agent on the server with PowerShell (as Administrator) using a Fleet enrolment token.
