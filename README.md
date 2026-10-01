@@ -9,7 +9,7 @@
 ## 🗺️ Architecture
 
 ```mermaid
-flowchart LR
+flowchart TD
     Me["👤 Me (laptop)"] -->|"RDP, only from my IP"| SG["🔒 AWS Security Group<br/>port 3389 /32"]
     SG --> Srv["🖥️ Windows Server 2025<br/>AWS EC2, Frankfurt"]
     Srv -->|"Elastic Agent + Elastic Defend<br/>(outbound HTTPS only)"| SIEM["📊 Elastic Security<br/>Serverless SIEM, Frankfurt"]
